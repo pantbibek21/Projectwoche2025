@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  padding: 0px 5px;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgb(105, 105, 105);
+  height: 50px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 48px;
+}
+
+.main-heading,
+.sub-heading {
+  font-family: "Roboto Slab", serif;
+  color: rgb(7, 211, 0);
+  margin-bottom: 12px;
+}
+
+.main-heading {
+  font-size: 48px;
+}
+
+.sub-heading {
+  font-size: 36px;
+}
+
+header {
+  /*border-bottom: 2px solid rgb(7, 211, 0);*/
+  height: 70px;
+  line-height: 50px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+
+  z-index: 12;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  box-shadow: 0px 0px 10px rgb(105, 105, 105);
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 0px;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  transition: all 0.1s ease;
+  padding-bottom: 4px;
+}
+
+header nav a {
+  padding: 10px 20px;
+}
+
+header nav a:hover {
+  background-color: rgb(7, 211, 0);
+  color: white;
+  border-radius: 100px;
+  padding: 10px 30px;
+  box-shadow: 0px 0px 2.5px rgb(105, 105, 105);
+}
+
+.logo-wrapper-1 img {
+  height: 50px;
+  margin-top: 10px;
+}
+
+.logo-wrapper-2 img {
+  height: 50px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.socials {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.socials a {
+  color: rgb(7, 211, 0);
+  margin-right: 4px;
+}
+
+.socials a:hover {
+  background-color: rgb(7, 211, 0);
+  color: white;
+  border-radius: 100px;
+  padding: 7.5px 7.5px;
+  box-shadow: 0px 0px 5px rgb(105, 105, 105);
+}
+
+.footer-note {
+  font-size: 12px;
+}
+
+.mobile-menu {
+  display: none;
+
+  margin-top: 15px;
+}
+
+.fa-bars {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 856px) {
+  header {
+    justify-content: space-around;
+  }
+  .mobile-menu {
+    display: block;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav.active ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    gap: 0;
+    padding-left: 24px;
+    z-index: 121;
+  }
+
+  .main-heading {
+    font-size: 42px;
+  }
+
+  .sub-heading {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page-container {
+    max-width: 100%;
+    margin: 0 24px;
+    padding: 0px;
+  }
+}
